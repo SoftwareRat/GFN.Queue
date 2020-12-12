@@ -35,7 +35,8 @@ namespace GFN.Queue
             int currentQueueNumber = -1;
             var startDate = DateTime.Now;
 
-            var path = Path.GetFullPath(config["path"]);
+            var path = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NVIDIA Corporation\\GeForceNOW\\debug.log";
+;
 
             List<string> debugFileLines = new List<string>();
 
